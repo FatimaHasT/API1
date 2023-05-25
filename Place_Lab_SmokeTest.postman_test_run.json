@@ -1,0 +1,257 @@
+{
+	"id": "8c5008b0-375a-4ddf-96e7-ea0819ba75cb",
+	"name": "Place_Lab_SmokeTest",
+	"timestamp": "2023-05-25T22:17:41.908Z",
+	"collection_id": "27498374-2ba46816-eceb-4f72-84ba-fb2397475fab",
+	"folder_id": 0,
+	"environment_id": "27498374-482c3cb5-b612-4605-9a60-722663751538",
+	"totalPass": 15,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2023-05-25T22:17:37.374Z",
+	"totalFail": 15,
+	"results": [
+		{
+			"id": "204a0c5b-797e-4681-a312-ca510f5b4aca",
+			"name": "Log In With Valid Creds",
+			"url": "https://demo.placelab.com/api/v2/sessions",
+			"time": 177,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Response body contains a list of places": false
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 3,
+					"fail": 0
+				},
+				"Response body contains a list of places": {
+					"pass": 0,
+					"fail": 3
+				}
+			},
+			"times": [
+				189,
+				150,
+				177
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Response body contains a list of places": false
+				},
+				{
+					"Status code is 201": true,
+					"Response body contains a list of places": false
+				},
+				{
+					"Status code is 201": true,
+					"Response body contains a list of places": false
+				}
+			]
+		},
+		{
+			"id": "b9812a94-2e09-42b7-93c0-0f6056bed615",
+			"name": "Log In With Invalid Email",
+			"url": "https://demo.placelab.com/api/v2/sessions",
+			"time": 235,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Response body contains error message for invalid email format": false
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 3,
+					"fail": 0
+				},
+				"Response body contains error message for invalid email format": {
+					"pass": 0,
+					"fail": 3
+				}
+			},
+			"times": [
+				407,
+				183,
+				235
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Response body contains error message for invalid email format": false
+				},
+				{
+					"Status code is 400": true,
+					"Response body contains error message for invalid email format": false
+				},
+				{
+					"Status code is 400": true,
+					"Response body contains error message for invalid email format": false
+				}
+			]
+		},
+		{
+			"id": "fd7b46bf-0d60-4994-8a2e-ec434bf6c31d",
+			"name": "Log In With Missing Email",
+			"url": "https://demo.placelab.com/api/v2/sessions",
+			"time": 153,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Response body contains error message for missing email field": false
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 3,
+					"fail": 0
+				},
+				"Response body contains error message for missing email field": {
+					"pass": 0,
+					"fail": 3
+				}
+			},
+			"times": [
+				177,
+				272,
+				153
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Response body contains error message for missing email field": false
+				},
+				{
+					"Status code is 400": true,
+					"Response body contains error message for missing email field": false
+				},
+				{
+					"Status code is 400": true,
+					"Response body contains error message for missing email field": false
+				}
+			]
+		},
+		{
+			"id": "b30e4734-8e0d-4182-a0e6-5ee6c58e39fa",
+			"name": "Log In With Invalid Password",
+			"url": "https://demo.placelab.com/api/v2/sessions",
+			"time": 260,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Response body contains error message for invalid password": false
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 3,
+					"fail": 0
+				},
+				"Response body contains error message for invalid password": {
+					"pass": 0,
+					"fail": 3
+				}
+			},
+			"times": [
+				149,
+				146,
+				260
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Response body contains error message for invalid password": false
+				},
+				{
+					"Status code is 400": true,
+					"Response body contains error message for invalid password": false
+				},
+				{
+					"Status code is 400": true,
+					"Response body contains error message for invalid password": false
+				}
+			]
+		},
+		{
+			"id": "ad324b81-7263-4431-9229-d2bc7d3de436",
+			"name": "Log In With Missing Password",
+			"url": "https://demo.placelab.com/api/v2/sessions",
+			"time": 139,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Response body contains error message for missing password": false
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 3,
+					"fail": 0
+				},
+				"Response body contains error message for missing password": {
+					"pass": 0,
+					"fail": 3
+				}
+			},
+			"times": [
+				150,
+				163,
+				139
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Response body contains error message for missing password": false
+				},
+				{
+					"Status code is 400": true,
+					"Response body contains error message for missing password": false
+				},
+				{
+					"Status code is 400": true,
+					"Response body contains error message for missing password": false
+				}
+			]
+		}
+	],
+	"count": 3,
+	"totalTime": 2950,
+	"collection": {
+		"requests": [
+			{
+				"id": "204a0c5b-797e-4681-a312-ca510f5b4aca",
+				"method": "POST"
+			},
+			{
+				"id": "b9812a94-2e09-42b7-93c0-0f6056bed615",
+				"method": "POST"
+			},
+			{
+				"id": "fd7b46bf-0d60-4994-8a2e-ec434bf6c31d",
+				"method": "POST"
+			},
+			{
+				"id": "b30e4734-8e0d-4182-a0e6-5ee6c58e39fa",
+				"method": "POST"
+			},
+			{
+				"id": "ad324b81-7263-4431-9229-d2bc7d3de436",
+				"method": "POST"
+			}
+		]
+	}
+}

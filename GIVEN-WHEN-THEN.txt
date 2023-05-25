@@ -1,0 +1,34 @@
+Case 1: Valid Credentials
+
+Given a valid API endpoint and access token
+When a POST request is sent to create a new user with valid credentials
+Then the response should have a status code of 200 OK
+And the response body should contain the newly created user's details
+
+Case 2: Invalid Password
+
+Given a valid API endpoint and access token
+When a POST request is sent to create a new user with an invalid password
+Then the response should have a status code of 400 Bad Request
+And the response body should contain an error message indicating the invalid password
+
+Case 3: Missing Password
+
+Given a valid API endpoint and access token
+When a POST request is sent to create a new user without providing a password
+Then the response should have a status code of 400 Bad Request
+And the response body should contain an error message indicating the missing password
+
+Case 4: Invalid Email
+
+Given a valid API endpoint and access token
+When a POST request is sent to create a new user with an invalid email format
+Then the response should have a status code of 400 Bad Request
+And the response body should contain an error message indicating the invalid email format
+
+Case 5: Missing Email
+
+Given a valid API endpoint and access token
+When a POST request is sent to create a new user without providing an email
+Then the response should have a status code of 400 Bad Request
+And the response body should contain an error message indicating the missing email
